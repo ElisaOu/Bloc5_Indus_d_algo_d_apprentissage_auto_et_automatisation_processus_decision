@@ -1,0 +1,2 @@
+# Bloc5_Indus_d_algo_d_apprentissage_auto_et_automatisation_processus_decision
+Industrialisation d'un algorithme d'apprentissage automatique et automatisation des processus de décision
