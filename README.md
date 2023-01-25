@@ -1,7 +1,11 @@
 # Bloc N° 5 : Industrialisation d'un algorithme d'apprentissage automatique et automatisation des processus de décision.
+
 [Video explain - Bloc 5](xxxxx)
+
 [Link to ML flow server](https://mlfga.herokuapp.com/)
+
 [link to API documentation](https://apiga.herokuapp.com/docs)
+
 [Link to dashboard]( https://strga.herokuapp.com/)
 
 
@@ -27,7 +31,7 @@ In the experiment rental_price, the loaded model is a linear regression.
 
 
 
-1.	API - / predict endpoint
+2.	API - / predict endpoint
 The related files are stored in <b>2-API<b>, the files containing credentials have been removed.
 
 - An API has been built to allow to get predictions on the model loaded.
