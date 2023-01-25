@@ -61,11 +61,15 @@ Here is the dashboard app : https://strga.herokuapp.com/
 
 - Main conclusions :
     More than 80% of the rents are done through mobile.
+    
     •	Implementing a minimum threshold between 2 rents would concern 9% of the number of rents in average (6% for mobile scope and 19% for connect scope).
     Talking about number of cars, putting the threshold to 90 minutes would impact ~40% of the cars rented, while putting it to 480 minutes would impact over 70% of the cars rented. The threshold needs thus to be defined carefully to fix issues in the consecutive rents without killing opportunities of consecutive rents.
+    
     •	Late check-outs concern about half of the cars with consecutive rents (mobile about 60% and connect about 40%). Third quartile is 86 minutes.
     In term of impact for next driver, the analysis focuses on time delta with previous rent minus delay: negative means friction with next driver. Most of the issues are below 120 minutes. Most of late check-outs come from mobile with bigger and more frequent negative values.
+    
     •	Applying a threshold means fixing issues but also missing opportunities of consecutive rents as the car would not be available during a given time for another rent.
+    
     To balance both effects the threshold needs to be set as low as possible and on a limited scope.
     As mobile generates more issues, best would be to set the threshold on mobile only.
     The threshold pops between 30 minutes (solving 87 problematic cases out of 126) and 60 minutes (solving 102 problematic cases out of 126).
