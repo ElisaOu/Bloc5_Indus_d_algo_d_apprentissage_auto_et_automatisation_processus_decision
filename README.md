@@ -19,7 +19,7 @@ GetAround allows to rent cars from any person for a few hours or a few days.
 # Pricing optimization – Machine learning - / predict endpoint
 1.	ML flow tracking
 
-The related files are stored in <b>1-ml_flow_tracking<b>, the files containing credentials have been removed.
+The related files are stored in **1-ml_flow_tracking** , the files containing credentials have been removed.
 
 - An ML flow server has been set up to store models and their artifacts.
 
@@ -32,7 +32,7 @@ In the experiment rental_price, the loaded model is a linear regression.
 
 
 2.	API - / predict endpoint
-The related files are stored in <b>2-API<b>, the files containing credentials have been removed.
+The related files are stored in **2-API**, the files containing credentials have been removed.
 
 - An API has been built to allow to get predictions on the model loaded.
 
@@ -52,7 +52,7 @@ This end point accepts POST method with JSON input data and returns predictions.
 - Here are the main commands to deploy:
 
 # Dashboarding
-The related files are stored in <b>3-streamlit<b>
+The related files are stored in **3-streamlit**
 
 
 - This dashboard is a supporting tool to make the right trade off between mitigating impact of delays and not hurting the revenue of cars owners. It focuses on threshold (in minutes) and scope (checking via mobile or connect).
