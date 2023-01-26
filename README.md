@@ -79,7 +79,9 @@ This end point accepts POST method with JSON input data and returns predictions.
 
 Here below the features, expected data types and default values : 
 
+
 ![Features of the API](https://github.com/ElisaOu/Bloc5_Indus_d_algo_d_apprentissage_auto_et_automatisation_processus_decision/blob/main/API_features.JPG)
+
 
 - The code for requesting the API is available in file attached : request_predict_API.ipynb
 
