@@ -55,7 +55,7 @@ heroku container:release web -a mlfga
 
 -In the heroku app, feed config variables (S3 bucket + AWS credentials)
 
--Put URI add-ons in heroku ressources with heroku postgres
+-Put URI add-ons in heroku ressources with heroku postgres, and store as credentials
 
 #### Feed with a model :
 
@@ -77,7 +77,7 @@ URL to request API : https://apiga.herokuapp.com/predict
 
 This end point accepts POST method with JSON input data and returns predictions. We assume inputs will be always well formated. 
 
-Here below the features, expected format and default value : 
+Here below the features, expected data types and default values : 
 
 ![Features of the API](https://github.com/ElisaOu/Bloc5_Indus_d_algo_d_apprentissage_auto_et_automatisation_processus_decision/blob/main/API_features.JPG)
 
@@ -128,24 +128,9 @@ Here is the dashboard app : https://strga.herokuapp.com/
 
 - Main conclusions from the dashboard:
 
-More than 80% of the rents are done through mobile.
+Applying a threshold means fixing issues but also missing opportunities of consecutive rents as the car would not be available during a given time for another rent.
 
--Implementing a minimum threshold between 2 rents would concern 9% of the number of rents in average (6% for mobile scope and 19% for connect scope).
-Talking about number of cars, putting the threshold to 90 minutes would impact ~40% of the cars rented, while putting it to 480 minutes would impact over 70% of the cars rented. 
-
-The threshold needs thus to be defined carefully to fix issues in the consecutive rents without killing opportunities of consecutive rents.
-
--Late check-outs concern about half of the cars with consecutive rents (mobile about 60% and connect about 40%). 
-
-Third quartile is 86 minutes.
-
-In term of impact for next driver, most of the issues are below 120 minutes. 
-
-Most of late check-outs come from mobile with longer and more frequent delays.
-
--Applying a threshold means fixing issues but also missing opportunities of consecutive rents as the car would not be available during a given time for another rent.
-
-To balance both effects the threshold needs to be set as low as possible and on a limited scope.
+To balance both effects the threshold needs to be set low and on a limited scope.
 
 As mobile generates more issues, best would be to set the threshold on mobile only.
 
