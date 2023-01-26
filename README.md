@@ -33,15 +33,15 @@ In the experiment called rental_price, the loaded model is a linear regression.
 
 #### ML Flow tracking setup :
 
-- files : Dockerfile + requirements.txt + run.sh 
+-files : Dockerfile + requirements.txt + run.sh 
 
 -terminal command : docker build . -t mlf-getaround
 
-- terminal command : source run.sh
+-terminal command : source run.sh
 
-- check of the app in local by typing localhost:4000 on internet explorer
+-check of the app in local by typing localhost:4000 on internet explorer
 
-- if ok, deploy to heroku with terminal commands :
+-if ok, deploy to heroku with terminal commands :
 
 heroku login
 
@@ -53,17 +53,17 @@ heroku container:push web -a mlfga
 
 heroku container:release web -a mlfga
 
-- In the heroku app, feed config variables (S3 bucket + AWS credentials)
+-In the heroku app, feed config variables (S3 bucket + AWS credentials)
 
-- Put URI add-ons in heroku ressources with heroku postgres
+-Put URI add-ons in heroku ressources with heroku postgres
 
 #### Feed with a model :
 
-- Add a file app.py to set experiments on the ML flow tracking app and the source of data used
+-Add a file app.py to set experiments on the ML flow tracking app and the source of data used
 
-- terminal command : docker build . -t mlf-getaround
+-terminal command : docker build . -t mlf-getaround
 
-- run the image with source run.sh
+-run the image with source run.sh
 
 ## API - / predict endpoint
 
@@ -89,19 +89,19 @@ Here below the features, expected format and default value :
 
 #### API :
 
-- files : Dockerfile + app.py + requirements.txt + run.sh 
+-files : Dockerfile + app.py + requirements.txt + run.sh 
 
-- terminal command : docker build . -t api-getaround
+-terminal command : docker build . -t api-getaround
 
-- Add a secrets.sh containing credentials (credentials have been removed here)
+-Add a secrets.sh containing credentials (credentials have been removed here)
 
-- terminal command : source secrets.sh
+-terminal command : source secrets.sh
 
-- terminal command : source run.sh
+-terminal command : source run.sh
 
-- check of the app in local by typing localhost:4000 on internet explorer
+-check of the app in local by typing localhost:4000 on internet explorer
 
-- if ok, deploy to heroku with terminal commands
+-if ok, deploy to heroku with terminal commands
 
 heroku login
 
@@ -113,7 +113,7 @@ heroku container:push web -a apiga
 
 heroku container:release web -a apiga
 
-- In the heroku app, feed config variables, same as in run.sh
+-In the heroku app, feed config variables, same as in run.sh
 
 
 # 2. Dashboarding
@@ -130,12 +130,12 @@ Here is the dashboard app : https://strga.herokuapp.com/
 
 More than 80% of the rents are done through mobile.
 
-- Implementing a minimum threshold between 2 rents would concern 9% of the number of rents in average (6% for mobile scope and 19% for connect scope).
+-Implementing a minimum threshold between 2 rents would concern 9% of the number of rents in average (6% for mobile scope and 19% for connect scope).
 Talking about number of cars, putting the threshold to 90 minutes would impact ~40% of the cars rented, while putting it to 480 minutes would impact over 70% of the cars rented. 
 
 The threshold needs thus to be defined carefully to fix issues in the consecutive rents without killing opportunities of consecutive rents.
 
-- Late check-outs concern about half of the cars with consecutive rents (mobile about 60% and connect about 40%). 
+-Late check-outs concern about half of the cars with consecutive rents (mobile about 60% and connect about 40%). 
 
 Third quartile is 86 minutes.
 
@@ -143,7 +143,7 @@ In term of impact for next driver, most of the issues are below 120 minutes.
 
 Most of late check-outs come from mobile with longer and more frequent delays.
 
-- Applying a threshold means fixing issues but also missing opportunities of consecutive rents as the car would not be available during a given time for another rent.
+-Applying a threshold means fixing issues but also missing opportunities of consecutive rents as the car would not be available during a given time for another rent.
 
 To balance both effects the threshold needs to be set as low as possible and on a limited scope.
 
@@ -153,15 +153,15 @@ The threshold pops between 30 minutes (solving 87 problematic cases out of 126) 
 
 - Here are the main commands to deploy :
 
-- files : Dockerfile + app.py + config.toml 
+-files : Dockerfile + app.py + config.toml 
 
-- terminal command : docker build . -t strga
+-terminal command : docker build . -t strga
 
-- terminal command : docker run -it -e PORT=80 -p 4000:80
+-terminal command : docker run -it -e PORT=80 -p 4000:80
 
-- check of the app in local by typing localhost:4000 on internet explorer
+-check of the app in local by typing localhost:4000 on internet explorer
 
-- deploy to heroku with terminal commands
+-deploy to heroku with terminal commands
 
 heroku login
 
