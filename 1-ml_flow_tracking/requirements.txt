@@ -1,0 +1,9 @@
+boto3
+pandas 
+gunicorn 
+mlflow
+psycopg2-binary
+jupyter
+openpyxl
+numpy
+scikit-learn 
