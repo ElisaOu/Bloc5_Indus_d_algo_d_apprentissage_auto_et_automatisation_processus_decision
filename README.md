@@ -1,6 +1,5 @@
 # Bloc N° 5 : Industrialisation d'un algorithme d'apprentissage automatique et automatisation des processus de décision.
 
-[Video explain - Bloc 5](https://share.vidyard.com/watch/5Yq2uo1daUuTbL6fYDszVu?)
 
 [Link to ML flow server](https://mlfga.herokuapp.com/)
 
