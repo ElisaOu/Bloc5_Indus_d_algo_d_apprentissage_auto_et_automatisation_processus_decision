@@ -1,13 +1,6 @@
 # Bloc N° 5 : Industrialisation d'un algorithme d'apprentissage automatique et automatisation des processus de décision.
 
-[Video explain](https://share.vidyard.com/watch/z3ApRZZUnDNiw4uiwvjREY?)
-
-[Link to ML flow server](https://mlfga.herokuapp.com/)
-
-[link to API documentation](https://apiga.herokuapp.com/docs)
-
-[Link to dashboard](https://strga.herokuapp.com/)
-
+[Video explain](https://share.vidyard.com/watch/Mez5dfSJ98fsLLVJWeTDRD?)
 
 # GetAround Project
 GetAround allows to rent cars from any person for a few hours or a few days.
