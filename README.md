@@ -157,7 +157,7 @@ heroku container:release web -a strga
 
 Here are the tools delivered for this project:
 
-- The **complete code** stored in a github repo
+- The **complete code** stored in a github repository
 
 - An **ML flow tracking server** to store machine learning models
 
